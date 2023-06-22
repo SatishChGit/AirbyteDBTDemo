@@ -20,6 +20,6 @@ select
     _airbyte_ab_id,
     _airbyte_emitted_at,
     {{ current_timestamp() }} as _airbyte_normalized_at
-from {{ source('airbyte_dbt_demo', '_airbyte_raw_Sample') }} as table_alias
+from {{ source('AirbyteDbtIntegrationDemo', '_airbyte_raw_Sales') }} as table_alias
 -- data_stream
 where 1 = 1
