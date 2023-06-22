@@ -1,9 +1,9 @@
 version: 2
 sources:
-  - name: AirbyteDbtIntegrationDemo
+  - name: demo_sales
     quoting:
       database: true
       schema: false
       identifier: false
     tables:
-      - name: _airbyte_raw_Sales
+      - name: _airbyte_raw_sales
